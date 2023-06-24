@@ -1,4 +1,4 @@
-import { useNotification } from "../hook/useNotification";
+import { useNotification } from "doom-react-notifications";
 
 export const Counter = () => {
   const { notificationList } = useNotification();

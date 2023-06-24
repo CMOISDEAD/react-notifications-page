@@ -1,8 +1,11 @@
-import { NotificationProvider } from "./notifier/NotificationContext";
-import { NotificationConsumer } from "./notifier/NotificationConsumer";
+import { useState } from "react";
+import {
+  NotificationProvider,
+  NotificationConsumer,
+} from "doom-react-notifications";
+import "doom-react-notifications/dist/style.css";
 import { Buttons } from "./components/Buttons";
 import { Counter } from "./components/Counter";
-import { useState } from "react";
 
 const Custom = ({ title, message, onClick }) => {
   return (

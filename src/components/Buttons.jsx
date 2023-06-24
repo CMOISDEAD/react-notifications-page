@@ -1,4 +1,4 @@
-import { useNotification } from "../hook/useNotification";
+import { useNotification } from "doom-react-notifications";
 
 export const Buttons = ({ custom }) => {
   const { showNotification, wipeNotifications } = useNotification();
@@ -9,7 +9,6 @@ export const Buttons = ({ custom }) => {
       type: name,
       title: `${name} type notification`,
       message: `notification of type ${name}`,
-      visible: true,
     };
 
     showNotification(newNotification);
