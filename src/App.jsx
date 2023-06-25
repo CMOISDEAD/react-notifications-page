@@ -20,11 +20,11 @@ function App() {
   const [useCustom, setUseCustom] = useState(false);
 
   return (
-    <NotificationProvider Custom={useCustom && Custom}>
+    <NotificationProvider>
       <h1 style={{ textAlign: "center" }}>React Easy Notifications</h1>
       <Counter />
       <Buttons custom={{ useCustom, setUseCustom }} />
-      <NotificationConsumer />
+      <NotificationConsumer Custom={useCustom && Custom} />
       <div>
         Documentation and information on{" "}
         <a
